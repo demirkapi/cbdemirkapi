@@ -1,0 +1,11 @@
+﻿[
+	{"SITENAME":"Twitter","URL":"http:\/\/twitter.com/demirkapi"},
+	{"SITENAME":"FriendFeed","URL":"http:\/\/friendfeed.com/demirkapi"},	
+	{"SITENAME":"GooglePlus","URL":"http:\/\/cfml.us/Gs"},
+	{"SITENAME":"Facebook","URL":"http:\/\/facebook.com/demirkapi"},
+	{"SITENAME":"LinkedIn","URL":"http:\/\/linkedin.com/in/demirkapi"},
+	{"SITENAME":"Flickr","URL":"http:\/\/flickr.com/photos/oguz/"},	
+	{"SITENAME":"FourSquare","URL":"http:\/\/foursquare.com/demirkapi"},	
+	{"SITENAME":"Skype","URL":"skype:oguz.demirkapi?call"},			
+	{"SITENAME":"RSS","URL":"http:\/\/en.demirkapi.net/index.cfm/blog/rss"}
+]
