@@ -24,13 +24,7 @@ component extends="contentbox.model.ui.BaseWidget" singleton{
 	*/
 	any function renderIt(boolean dropdown=false, string title="Links",string titleLevel="4"){
 		var rString	= "";
-		var links = [
-				{link='http://blog.demirkapi.net', title="Oğuz Demirkapı"},
-				{link='http://bennadel.com', title="Ben Nadel"},
-				{link='http://www.raymondcamden.com', title="Ray Camden"},
-				{link='http://www.coldbox.org', title="ColdBox"},
-				{link="http://www.gocontentbox.org", title="ContentBox"}
-			];
+		var links = deserializeJSON(fileRead("#ExpandPath('/')##cb.layoutRoot()#/config/links.json"));
 
 		saveContent variable="rString"{
 			// title
@@ -54,7 +48,7 @@ component extends="contentbox.model.ui.BaseWidget" singleton{
 			writeOutput('<select name="links" id="links" onchange="window.location=this.value")><option value="##">Links</option>');
 			// iterate and create
 			for(var x=1; x lte arrayLen( arguments.links ); x++){
-				writeOutput('<option value="#links[x].link#">#links[x].title#</option>');
+				writeOutput('<option value="#links[x].url#">#links[x].sitename#</option>');
 			}
 			// close ul
 			writeOutput("</select>");
@@ -70,7 +64,7 @@ component extends="contentbox.model.ui.BaseWidget" singleton{
 <ul id="links">');
 			// iterate and create
 			for(var x=1; x lte arrayLen( arguments.links ); x++){
-				writeOutput('<li class="links"><a href="#links[x].link#" target="_blank">#links[x].title#</a></li>');
+				writeOutput('<li class="links"><a href="#links[x].url#" target="_blank">#links[x].sitename#</a></li>');
 			}
 			// close ul
 			writeOutput("</ul>");
