@@ -1,16 +1,16 @@
-﻿<div class="span2">
+﻿<div class="span3">
 	&nbsp;
 </div>
-<div class="span6">
+<div class="span5">
 <cfoutput>
-<h4>Add Comment</h4>
 <form id="commentForm" name="commentForm" method="post" action="#cb.linkCommentPost(prc.entry)#" class="navbar-search form-horizontal">
 <fieldset>
 	<input name="contentID" type="hidden" value="#prc.entry.getContentID()#" >
 	<input name="contentType" type="hidden" value="#prc.entry.getContentType()#" >    
 	<div class="control-group">
-		<label class="control-label" for="author">Name</label>
+        <label class="control-label" for="author">Name</label>
 		<div class="controls">
+         
 			<input type="text" class="input-xlarge" id="author" name="author">
 		</div>
 		<label class="control-label" for="authorEmail">E-mail</label>
