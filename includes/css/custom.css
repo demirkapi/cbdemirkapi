@@ -183,7 +183,7 @@ footer .bottomin a {
 }
 
 .socialicons {
-
+  clear:both;
 }
 
 .socialicons img
@@ -196,6 +196,18 @@ footer .bottomin a {
 	opacity:1.0;
 	filter:alpha(opacity=100); /* For IE8 and earlier */
 }
+
+.navsocial > li {
+  display: block;
+  float: left;
+}
+
+.navsocial > li > a {
+  float: none;
+  padding: 2px;
+  text-decoration: none;
+}
+
 
 .navbar-search .search-query {
   padding: 4px 9px;

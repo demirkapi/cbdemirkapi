@@ -125,7 +125,7 @@
 							--->
 						</li>
 					</ul>
-					<br />
+					
                     &nbsp;<cfinclude template="_social_top.cfm">
 				</div><!--/.nav-collapse -->
 			</div>
