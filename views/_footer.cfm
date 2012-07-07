@@ -8,20 +8,15 @@
 			</p>
 		</div>
 		<div class="span3">
-			<h4><i class="icon-folder-open"></i> Recent Posts</h4>
+			<h4>Recent Posts</h4>
 			#cb.widget('RecentEntries')#
 		</div>
 		<div class="span3">
-			<h4><i class="icon-thumbs-up"></i> Recent Comments</h4>
+			<h4>Recent Comments</h4>
 			#cb.widget('RecentComments')#
 		</div>                
 		<div class="span2">
-			<h4><i class="icon-globe"></i> Links</h4>
-			<ul>
-				<li><a href="http://demirkapi.net" target="_blank">demirkapi.net</a></li>
-				<li><a href="http://cftr.net" target="_blank">CFTR</a></li>
-				<li><a href="http://coldbox.org" target="_blank">ColdBox</a></li>		                	
-			</ul>
+			#cb.widget("Links")#
 		</div> 
 		<div class="span3 small">
 			<p><i class="icon-info-sign"></i> Thanks for dropping by! Feel free to join the discussion by leaving comments, and stay updated by subscribing to the <a href="#cb.linkRSS()#" target="_blank">RSS feed</a>.</p>

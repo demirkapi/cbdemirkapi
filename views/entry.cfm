@@ -4,6 +4,7 @@
 		<!--- Quickly reuse our entry template to build this one with some extra pizzaz --->
 		#cb.quickEntry(args={addComments=true})#
         
+		<h4>Comments</h4>
 		<!--- Display Comments --->
 		#cb.quickComments()#	
         
@@ -11,6 +12,7 @@
         <!--- 
 		#cb.quickCommentForm(prc.entry)#
         --->
+        <h4>Add Comment</h4>
         #cb.quickView("_commentform")# 
 		
         <!--- ContentBoxEvent --->
