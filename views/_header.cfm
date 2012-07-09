@@ -111,23 +111,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#cb.linkHome()#"><img src="#cb.layoutRoot()#/includes/img/OD_Blog_Sml_logo.png" alt="#pagetitle#"></a>
+				<a class="brand" href="#cb.linkHome()#"><cfif fileexists('#ExpandPath('/')##cb.layoutRoot()#/includes/img/cb_logo.png')><img src="#cb.layoutRoot()#/includes/img/cb_logo.png" alt="#pagetitle#"><cfelse><h1 class="title">#cb.siteName()#</h1><small>#cb.siteTagLine()#</small></cfif></a>
 				<div class="nav-collapse pull-right">
 					<ul class="nav pull-right">
 						<li><a href="#cb.linkHome()#">Home</a></li>
 						<!--- Root Menu --->
 						#cb.rootMenu(type="li")#
-						<!--- Search Box --->
-                        <li>
-                        #cb.quickView("_search")#
-                        <!---
-							#cb.widget(name="SearchForm",args={type="blog",label=""})#
-							--->
-						</li>
-					</ul>
-					
-                    &nbsp;<cfinclude template="_social_top.cfm">
-				</div><!--/.nav-collapse -->
+					</ul>					
+				<cfinclude template="_social_top.cfm">
+                </div><!--/.nav-collapse -->
+				
 			</div>
 		</div>
 	</div>

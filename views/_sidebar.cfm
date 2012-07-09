@@ -14,14 +14,20 @@
 	</div> 
 
 	<div class="row">      
-		<div class="span2">      
+		<div class="span2">
 			<h3>Categories</h3>
+            <ul class="unstyled">
 			#cb.quickCategories()#
+            </ul>
             
 			<h3>Archives</h3>
 			#cb.widget("Archives")#
 		</div>
 		<div class="span2">      
+			<h3>Search</h3>
+			#cb.quickView("_search")#
+			<!--- #cb.widget(name="SearchForm",args={type="blog",label=""})# --->
+
 			<h3>Latest Tweets</h3>
 			#cb.quickView("tweets")#
             <!--- 
